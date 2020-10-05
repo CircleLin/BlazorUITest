@@ -15,6 +15,7 @@ namespace NUnitTestProject1
         [Test]
         public void IndexShouldRender()
         {
+            //
             var ctx = new Bunit.TestContext();
 
             //cut = component under test
@@ -46,7 +47,7 @@ namespace NUnitTestProject1
             var mockService = Substitute.For<IWeatherService>();
 
             mockService.GetWeatherDataAsync().Returns(Task.FromResult<FetchData.WeatherForecast[]>(null));
-            
+
             ctx.Services.AddSingleton<IWeatherService>(mockService);
 
             var cut = ctx.RenderComponent<FetchData>();
@@ -64,7 +65,7 @@ namespace NUnitTestProject1
             var ctx = new Bunit.TestContext();
             var mockService = Substitute.For<IWeatherService>();
 
-            mockService.GetWeatherDataAsync().Returns(Task.FromResult(new WeatherForecast[] { new WeatherForecast() { TemperatureC = 30, Summary = "test", Date = DateTime.Now } }));
+            mockService.GetWeatherDataAsync().Returns(Task.FromResult(new WeatherForecast[] { new WeatherForecast() { TemperatureC = 30, Summary = "test", Date = new DateTime(2020, 10, 6) } }));
 
             ctx.Services.AddSingleton<IWeatherService>(mockService);
 
@@ -75,18 +76,18 @@ namespace NUnitTestProject1
                                 <table class='table'>
                                  <thead>
                                    <tr>
-                                     <th>Date</th >
-                                     <th>Temp. (C) </th >
-                                     <th>Temp. (F) </th >
-                                     <th>Summary</th >
+                                     <th>Date</th>
+                                     <th>Temp. (C)</th>
+                                     <th>Temp. (F)</th>
+                                     <th>Summary</th>
                                    </tr>
                                  </thead>
                                  <tbody>
                                    <tr>
-                                     <td>2020/10/5</td >
-                                     <td>30</td >
-                                     <td>85</td >
-                                     <td>test</td >
+                                     <td>2020/10/6</td>
+                                     <td>30</td>
+                                     <td>85</td>
+                                     <td>test</td>
                                    </tr>
                                  </tbody>
                                 </table>";
