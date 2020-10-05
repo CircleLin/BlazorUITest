@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorUITest", "BlazorUITest\BlazorUITest.csproj", "{D8537BBE-8568-43AF-A44C-68C08E7776AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTestProject1", "NUnitTestProject1\NUnitTestProject1.csproj", "{52D7CA33-2E2D-4531-9C1B-CB6010EBA799}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8537BBE-8568-43AF-A44C-68C08E7776AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8537BBE-8568-43AF-A44C-68C08E7776AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8537BBE-8568-43AF-A44C-68C08E7776AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8537BBE-8568-43AF-A44C-68C08E7776AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52D7CA33-2E2D-4531-9C1B-CB6010EBA799}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52D7CA33-2E2D-4531-9C1B-CB6010EBA799}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52D7CA33-2E2D-4531-9C1B-CB6010EBA799}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52D7CA33-2E2D-4531-9C1B-CB6010EBA799}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F6232A80-1634-4466-8B9F-FC79B18DBC39}
+	EndGlobalSection
+EndGlobal
